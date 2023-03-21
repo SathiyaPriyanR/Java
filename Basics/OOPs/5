@@ -1,0 +1,19 @@
+package SamplePackage1;
+
+public class Sample6 {
+    protected void ex1() {
+        System.out.println("Package Sample Program");
+    }
+
+}
+
+
+
+import SamplePackage1.Sample6;
+public class Sample5 extends Sample6{
+    public static void main(String[] args) {
+        Sample5 obj = new Sample5();
+        obj.ex1();
+
+    }
+}
