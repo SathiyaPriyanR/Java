@@ -1,22 +1,19 @@
+
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
 
-        String a = "JHON";
-        String b = "peter";
-        String c = "peter";
-        String d = "hello world " + "         hello world ";
-        String e = "dhina ad";
-        String f = "dhina ad";
-        System.out.println(a.equals(b));                  // using equals
-        System.out.println(b.equalsIgnoreCase(c));        // equalsIgnoreCase
-        System.out.println(c.compareTo(b));               // compareTo
-        System.out.println(b.compareToIgnoreCase(c));     // compareToIgnoreCase
-        System.out.println(a.concat(" " + b).concat(" " + c));  // concat
-        System.out.println(c.toUpperCase());              // toUpperCase
-        System.out.println(a.toLowerCase());              // toLowerCase
-        System.out.println(b.length());                   // length
-        System.out.println(c.substring(2,4));             // subString
-        System.out.println(d.trim());                     // trim
-        System.out.println(e.replace("a","d").replace("d","a"));  /// replace
+        System.out.println("Length of the Rectangle is : ");
+        int length = obj.nextInt();
+
+        System.out.println("Breadth of the Rectangle is : ");
+        int breadth = obj.nextInt();
+
+        if (length == breadth) {
+            System.out.println("Its Square");
+        } else {
+            System.out.println("Not a Square");
+        }
     }
 }
