@@ -1,20 +1,12 @@
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.TreeSet;
+import java.util.TreeMap;
 public class Main {
     public static void main(String[] args) {
-     HashSet <String> a = new HashSet<>();
-     a.add("Parker");
-        a.add("Rorito");
-     a.add("Cello");
-
-     Iterator <String> b = a.iterator();
-     while (b.hasNext()) {
-         String c = b.next();
-         System.out.println(c);
-     }
-     TreeSet <String> d =new TreeSet<>(a);
-        System.out.println(d);
+        TreeMap<Integer, String> a = new TreeMap<>();
+        a.put(1, "hello world");
+        a.put(2, "hello");
+        a.put(1, "hello");
+        a.put(1,"hi");
+        System.out.println(a);
     }
 }
