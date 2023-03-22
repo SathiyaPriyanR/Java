@@ -1,0 +1,15 @@
+
+package com.mycompany.simplereturn;
+
+public class Simplereturn {
+    
+   static String name = "Jhon";
+    
+    static String name(){
+        return name;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(name());
+    }
+}
