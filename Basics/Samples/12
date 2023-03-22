@@ -1,0 +1,22 @@
+
+
+package com.mycompany.samplethis;
+
+class Sample1{
+    int aa;
+    int bb;
+     
+    public Sample1(int aa , int bb){
+        this.aa=aa;
+        this.bb=bb;
+    }   
+}
+public class Samplethis {
+
+    public static void main(String[] args) {
+        
+        Sample1 obj =new Sample1(10,20);
+        System.out.println(obj.aa);
+        System.out.println(obj.bb);
+    }
+}
