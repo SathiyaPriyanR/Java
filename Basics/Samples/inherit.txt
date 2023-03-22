@@ -1,0 +1,34 @@
+inherit,super,encap 
+
+
+class  Sample11{
+    private void method11() {
+        System.out.println("Peter");
+    }
+    public  void method12() {
+        method11();
+    }
+    public  void hell() {
+        System.out.println("hello");
+    }
+}
+ class Sample12 extends Sample11{
+     String name  = "Parker";
+
+     public String method11() {
+         return name;
+     }
+     public  void hell() {
+         System.out.println("world");
+         super.hell();
+     }
+}
+public class Inherit1 {
+    public static void main(String[] args) {
+        Sample12 obj = new Sample12();
+        obj.method12();
+        obj.hell();
+        System.out.println(obj.method11());
+    }
+
+}
