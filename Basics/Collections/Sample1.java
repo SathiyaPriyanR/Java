@@ -1,12 +1,16 @@
 
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.HashSet;
 public class Sample1 {
     public static void main(String[] args) {
-        ArrayList <String> a = new ArrayList<>();
-        a.add("Red");
-        a.add("Blue");
-        a.add("Orange");
-        a.add("Green");       // add colors (String)
-        System.out.println(a);
+       LinkedList <String> a = new LinkedList<>();
+       a.add("Dhina");
+       a.add("Naveen");
+       a.add("Thangam");
+
+       a.add("Naveen");
+        HashSet <String> b = new HashSet<>(a);
+        System.out.println(b);
+
     }
 }
