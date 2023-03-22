@@ -1,0 +1,13 @@
+public class Sample4 {
+    public static void main(String[] args) {
+        String a ="hello";
+        try {
+           int b = Integer.parseInt(a);
+            System.out.println(b);
+        }
+        catch(NumberFormatException c) {
+            System.out.println(c);
+        }
+    }
+}
+ 
