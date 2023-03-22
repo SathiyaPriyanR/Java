@@ -1,14 +1,17 @@
+import java.util.ArrayList;
 public class Sample1 {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
+        ArrayList <String> a = new ArrayList<>();
+        a.add("monday");
+        a.add("tuesday");
+        a.add("wednesday");
+        a.add("thursday");
+        a.add("friday");
+        a.add("saturday");
+        a.add("Sunday");
 
-        int r;
-
-        for(int n = 12345 ; n>0;n /=10){
-            r = n%10;
-           int k = (n-r)+r;
-
-                System.out.println(k);
+        for (String b :a) {
+            System.out.println(b);
         }
-   }
+    }
 }
-
