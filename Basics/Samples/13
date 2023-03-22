@@ -1,0 +1,31 @@
+
+
+package com.mycompany.samplesuper;
+
+class a{
+     a(){
+        System.out.println("A");
+    }  
+      a(int a){
+        a = 5;
+        System.out.println(a);
+      }
+}
+
+class b extends a{
+     b(){
+        System.out.println("B");
+    }
+    b(int b){
+        b = 5;
+        
+        System.out.println(b);
+    }
+}
+public class Samplesuper {
+
+    public static void main(String[] args) {
+        b obj = new b();
+        
+      }
+}
