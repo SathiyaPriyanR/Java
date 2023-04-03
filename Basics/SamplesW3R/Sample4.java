@@ -1,11 +1,22 @@
-package SamplesW3r;
+package enums;
 
 public class Sample4 {
     public static void main(String[] args) {
-        double a  = 1.8288;
-        int b = 205;
-        double c = a*a;
-        double d = b/c;
-        System.out.println(d);
+        int a = 0;
+        int b = 0;
+        int i = 2;
+        int c = 0;
+        for (; i <= 50; i++) {
+            a = i%2;
+            c = i ;
+            if (a==1) {
+                System.out.print(i + " ");
+
+            }
+
+        }b = c%3;
+        if (b==1) {
+            System.out.print(c + " ");
+        }
     }
 }
